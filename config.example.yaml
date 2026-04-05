@@ -1,0 +1,16 @@
+# loom-server configuration example
+server:
+  addr: :8080
+  token: ${LOOM_SERVER_TOKEN}
+  data_dir: /opt/loom/data
+
+# loom-agent configuration example
+agent:
+  server: http://localhost:8080
+  token: ${LOOM_SERVER_TOKEN}
+  node:
+    name: delamain
+    region: home
+    zone: a
+    tags:
+      - ssd
